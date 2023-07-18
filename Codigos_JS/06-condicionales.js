@@ -4,7 +4,7 @@
 CONDICIONALES
 Nos permiten trabajar con casos para ejecutar operaciones si es que los requisitos previos se cumplen.
 
-Utilizando los operadores  relacionales podemos crear condicionales:
+Operadores relacionales:
     Mayor:            >
     Menor:           <
     Igual            ==
@@ -12,11 +12,14 @@ Utilizando los operadores  relacionales podemos crear condicionales:
     Mayor o igual:   <=
     Diferente de:    !=
 
+Operadores lógicos
+        AND:   &&
+        OR:    ||
+        NOT:   !
+
 //*************************************************************************
-
-Condicional IF                                                       
+Condicional IF:                                                       
  */ 
-
 var edad1=28;            
 var nombre = "David Perez";
 
@@ -32,18 +35,8 @@ else{ /*Si no*/
     //Ejectua esto
     console.log("El usuario es menor de edad");
 }
-
 //*************************************************************************
-
-/*
-Condicionales utilizando operadores lógicos
-
-También podemos utilizar los operadores logicos
-    AND:   &&
-    OR:    ||
-    NOT:   !
-*/
-
+//Condicionales utilizando operadores lógicos:
 //Not
 var year=2022;
 if (year!=2016){console.log("El año no es 2016")}
@@ -55,6 +48,13 @@ else{console.log("Estamos en otra era")}
 //Or
 if (year >= 2022 || year <=2018){console.log("Año de mundial")}
 else{console.log("Año sin mundial")}
+//*************************************************************************
+/*
+Conditional Switch:
+    Podemos comprobar muchos casos utilizando los conditional switch para evitar utilizar demasiados ifs.
+*/
+
+
 
 
 
