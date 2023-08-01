@@ -1,6 +1,6 @@
 'use strict'
 
-//PARAMETROS
+//PARAMETROS DE FUNCIONES
 
 //Cuando llamamos a una función, normalmente lo que hacemos es escribir los parámetros que leera y proceara la funcion. Así como lo vimos, podemos mandar a llamar los marámetros, declararlos antes o tambien los llamados REST Y SPREAD.
 //***********************************************************************
