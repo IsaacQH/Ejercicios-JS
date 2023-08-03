@@ -42,4 +42,23 @@ lenguaje.forEach((elemento, indice) => {            //El primer valor es el cont
 });
 document.write("</ul>")
 
-VARIABLE.forEach((elemento, indice, array)=> { INSTRUCCIONES})
+//VARIABLE.forEach((elemento, indice, array)=> { INSTRUCCIONES})
+
+
+//Recorrer el array con ForIn
+document.write("<ul>")
+for (let leng in lenguaje){                 //Donde lenguaje se define como el indice i
+    document.write("<li>" + lenguaje[leng] + "</li>")  //Escribe en el documento el array desglosado
+}
+document.write("</ul>")
+
+//Busquedas en un array
+
+var busqueda = lenguaje.find((leng) => leng == "PHP")   //Funcion callback de flecha que revisa en lenguaje si el leng existe en todo el array
+var busquedaIndex = lenguaje.findIndex((leng) => leng == "PHP")    
+document.write("<br>" + busquedaIndex +"-"+ busqueda)
+
+//Metodo some
+var precios = [10,20,50,80,12];
+var busqueda2 = precios.some((num) => num >= 100)
+console.log(busqueda2)
