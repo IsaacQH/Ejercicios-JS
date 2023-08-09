@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charchet="UTF-8"/>                                                   <!-- Acepta cualquier tipo de caractér-->
+
+        <title>Ejercicio DOM, Eventos y Funciones</title>                          <!-- Nombre de la pagina-->
+
+        <script type = "text/javascript" src = "Codigos_JS/32-ejercicio-dom.js"></script>             <!-- Script JS-->
+
+         /
+        <style>                            /* Creamos el style, usamos el punto y luego el nombre de la caja */                           
+            .box{                                                  /* estilo de caja*/
+                width: 200px;                                       /* anchura*/
+                height: 250px;                                      /* altura*/
+                float: left;                                        /* posicion*/
+                background-color: rgb(255, 245, 215);             /* color fondo*/
+                margin: 20px;                                       /* tamaño de margen*/
+                padding: 10px;                                      /* borde transparente para txt*/
+            }
+            .dashed{                                               /* estilo para dashed (rayado) */
+                border: 3px dashed rgb(249, 169, 169);            /* posicion*/
+                
+            }
+
+        </style>
+
+    <body>
+         <!-- Ejercicio que debe incluir lo siguiente:
+            1. Formulario campos: Nombre, apellidos y edad
+            2. Boton de enviar formulario: evento submit
+            3. Mostrar esos datos por pantalla
+            4. Botón que al darle click nos muestra los datos actuales del formulario
+         -->
+
+        <h1>Ejercicio DOM, Eventos y Funciones - IsaacQH</h1>                  <!-- Encabezado h1-->
+
+         <div class = "box" >                                                  <!-- Crea una caja con nombre boz -->
+            <form  method = "POST" id = "forms" onsubmit = "return false">     <!-- Method para backend, onsubmit para no refreshear pagina --> 
+                <p>               
+                    <label for="nombre">Nombre: </label>                       <!-- Label de nombre para input nombre-->
+                    <input type="text" name = "nombre" id = "nombre"/>         <!-- input de nombre-->
+                    <span id = "errorNombre" style = "color:red" ></span> <!-- Mostrará un pensaje de error-->
+                </p>
+                <p> 
+                    <label for="apellido">Apellido: </label>                   <!-- Label de apellido para input apellido-->
+                    <input type="text" name = "apellido" id = "apellido"/>     <!-- input de apellido-->
+                    <span id = "errorApellido" style = "color:red" ></span> <!-- Mostrará un pensaje de error-->
+                </p>
+                <p>
+                    <label for="edad">Edad: </label>                           <!-- Label de edad para input edad-->
+                    <input type="text" name = "edad" id = "edad"/>             <!-- input de edad-->
+                    <span id = "errorEdad" style = "color:red" ></span>   <!-- Mostrará un pensaje de error-->
+                </p>
+                <p>
+                    <input type="submit" value = "Enviar" id = "submit"/>      <!-- Hace submit del forms con un txt que dice enviar-->
+                </p>
+            </form>
+        </div>
+
+        <div class = "box dashed">                                            <!-- Crea una caja con nombre boz -->
+            <h3>Informacion del usuario:</h3> <hr/>                           <!-- Encabezado con salto dde linea con linea dibujada -->
+            <p id = "parrafoNombre" >                                         <!-- Crea el parrafo de nombre con id-->
+                Nombre:  <span></span>                     
+            </p>
+            <p id = "parrafoApellido" >                                       <!-- Crea el parrafo de apellido con id-->
+                Apellido:  <span></span>                     
+            </p>
+            <p id = "parrafoEdad" >                                           <!-- Crea el parrafo de edad con id-->
+                Edad:  <span></span>                     
+            </p>
+            
+        </div>
+    </body>
+
+</html>
