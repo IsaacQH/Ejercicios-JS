@@ -4,18 +4,29 @@
         <meta charset = "utf-8">
         <title>JavaScript Object Notation (JSON)</title>
         <!--<script type = "text/javascript" src = "Codigos_JS/33-json.js"></script> -->
-        <script type = "text/javascript" src = "Codigos_JS/34-localstorage.js"></script>
+        <!--<script type = "text/javascript" src = "Codigos_JS/34-localstorage.js"></script>-->
+        <script type = "text/javascript" src = "Codigos_JS/35-localstorage-ejercicio.js"></script>
     </head>
 
     <body>
-        <h1>JavaScript Object Notation (JSON)</h1>
-        <div id = "peliculas">
-            <h2>Peliculas</h2>
-        </div>
-        <div id = "datos">
-
-        </div>
-
+        <h1>Añade tu pelicula...</h1>                          <!-- Encabezado h1-->
+        <!------------------------------------------------------------------------------------------>
+        <form action = "" id = "formPeliculas">                <!--Formulario de peliculas-->
+            <input type="text" id = "addPelicula">             <!--Input de peliculas-->
+            <button type = "submit">Guardar</button>           <!--Submit de peliculas-->
+        </form>
+        <!------------------------------------------------------------------------------------------>
+        <h2>Peliculas: </h2>                                    <!-- Encabezado h2-->
+        <div id = "peliculas" style="background-color:pink;"> <!-- Box donde se escribiran las peliculas-->
+            <ul id = "listaPeliculas"></ul>                     <!-- Crea la lista-->
+        </div>                          
+        <!------------------------------------------------------------------------------------------>         
+        <form action = "" id = "borrarPelicula">                        <!--Formulario de borrar peliculas-->
+            <input type="text" id = "borrar">           <!--Input de peliculas-->
+            <button type = "submit">Borrar</button>             <!--Submit de peliculas-->
+        </form>
+        <!------------------------------------------------------------------------------------------>
+        <!--<div id = "datos"></div> -->
     </body>
 
 

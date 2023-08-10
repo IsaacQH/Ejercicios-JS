@@ -30,7 +30,7 @@ window.addEventListener("load", () => {                                         
     var usser = JSON.parse(localStorage.getItem("usuario"))                                 //Método parse de JSON que permite guardar en array
     console.log(usser)                                                                      //Console log de usser
 
-    document.querySelector("#datos").append(usser.web + " - " + usser.nombre)               //Agrega a peliculas en texto la web y nombre
+    document.querySelector("#peliculas").append(usser.web + " - " + usser.nombre)               //Agrega a peliculas en texto la web y nombre
 
     //Eliminar de Local Storage
     localStorage.removeItem("usuario")                                                      //De forma individual con método removeItem(key)
